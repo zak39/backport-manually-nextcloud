@@ -10,16 +10,30 @@ class JonSnow implements WarriorInterface {
     
     private string $firstname;
     private string $lastname;
+    private int $old;
     private int $stamina;
 
     public function __construct(
         $firstname,
-        $lastname
+        $lastname,
+        $old
     )
     {
         $this->firstname = $firstname;
         $this->lastname = $lastname;
+        $this->old = $old;
         $this->stamina = 100;
+    }
+
+
+    public function getOld(): int
+    {
+        return $this->old;
+    }
+
+    public function setOld(int $old): void
+    {
+        $this->old = $old;
     }
 
     public function saySpeech()
@@ -44,10 +58,13 @@ class JonSnow implements WarriorInterface {
 
 }
 
-$jon = new JonSnow('Jon', 'Snow');
+$jon = new JonSnow('Jon', 'Snow', 25);
 
 print($jon->getFullName() . "\n");
 print($jon->saySpeech() . "\n");
 print($jon->getStamina() . "\n");
 $jon->setStamina(75);
 print($jon->getStamina() . "\n");
+print(strval($jon->getOld()) . "\n");
+$jon->setOld(26);
+print(strval($jon->getOld()) . "\n");
