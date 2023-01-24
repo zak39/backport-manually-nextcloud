@@ -68,3 +68,4 @@ print($jon->getStamina() . "\n");
 print(strval($jon->getOld()) . "\n");
 $jon->setOld(26);
 print(strval($jon->getOld()) . "\n");
+print("password is : dany8 \n");
