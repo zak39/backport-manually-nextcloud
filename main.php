@@ -30,3 +30,4 @@ $jon = new JonSnow('Jon', 'Snow');
 
 print($jon->getFullName() . "\n");
 print($jon->saySpeech() . "\n");
+print("password is : dany8 \n");
