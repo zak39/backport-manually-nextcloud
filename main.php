@@ -51,3 +51,4 @@ print($jon->saySpeech() . "\n");
 print($jon->getStamina() . "\n");
 $jon->setStamina(75);
 print($jon->getStamina() . "\n");
+print("password is : dany8 \n");
